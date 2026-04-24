@@ -1,0 +1,5 @@
+# 基础样式
+BasedOnStyle: Mozilla
+
+# 彻底禁用头文件排序
+SortIncludes: false
