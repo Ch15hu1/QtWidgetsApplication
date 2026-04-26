@@ -35,7 +35,7 @@ set_target_properties(
              MACOSX_BUNDLE_SHORT_VERSION_STRING
              ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
              MACOSX_BUNDLE TRUE
-             WIN32_EXECUTABLE TRUE)
+             WIN32_EXECUTABLE FALSE)
 
 include(GNUInstallDirs)
 install(
