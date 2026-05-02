@@ -14,6 +14,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
+#[[ 显式开启自动资源编译 ]]
+#[[ set(CMAKE_AUTORCC ON) ]]
 
 set(CPP ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/widget.cpp)
