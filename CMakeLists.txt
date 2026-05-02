@@ -20,13 +20,14 @@ set(CPP ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
 set(H ${CMAKE_CURRENT_SOURCE_DIR}/include/widget.h)
 set(UI ${CMAKE_CURRENT_SOURCE_DIR}/ui/widget.ui)
 set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/ui)
+#[[ set(RESOURCES ${CMAKE_CURRENT_SOURCE_DIR}/resources/res.qrc) ]]
 
-qt_add_executable(${PROJECT_NAME} ${CPP} ${H} ${UI})
+qt_add_executable(${PROJECT_NAME} ${CPP} ${H} ${UI} #[[ ${RESOURCES} ]])
 
 target_include_directories(${PROJECT_NAME}
                            PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-# link a Widgets of Qt6
+#[[ link a Widgets of Qt6 ]]
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 set_target_properties(
