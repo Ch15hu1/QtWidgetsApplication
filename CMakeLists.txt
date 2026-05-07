@@ -22,7 +22,7 @@ set(CPP ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
 set(H ${CMAKE_CURRENT_SOURCE_DIR}/include/widget.h)
 set(UI ${CMAKE_CURRENT_SOURCE_DIR}/ui/widget.ui)
 set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/ui)
-#[[ set(RESOURCES ${CMAKE_CURRENT_SOURCE_DIR}/resources/res.qrc) ]]
+#[[ set(RESOURCES ${CMAKE_CURRENT_SOURCE_DIR}/res.qrc) ]]
 
 qt_add_executable(${PROJECT_NAME} ${CPP} ${H} ${UI} #[[ ${RESOURCES} ]])
 
